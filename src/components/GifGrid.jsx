@@ -11,7 +11,7 @@ export const GifGrid = ({ category, onDeleteCategorie }) => {
 	return (
 		<>
 			<h3>
-				{category} <button onClick={onDelete}>Borrar Categoria</button>
+				{category} <button onClick={onDelete} aria-label="botonBorrar">Borrar Categoria</button>
 			</h3>
 			{isLoading ? <h4>Cargando</h4> : null}
 			<div className="card-grid">
